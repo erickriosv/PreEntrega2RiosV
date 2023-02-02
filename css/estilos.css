@@ -1,0 +1,467 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding:0;
+   
+
+}
+/* estilos generales */
+
+
+header a:hover{
+color: #fff !important
+}
+
+
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 25px;  
+    color: rgb(22, 211, 218);
+}
+
+.nav-pills .nav-link.active,.show>.nav-pills
+ {
+    background: rgb(22, 211, 218) !important
+    
+}
+
+
+.nav-link{
+    color: rgb(22, 211, 218) !important  
+}
+
+.nav-link:hover {
+background: rgb(22, 211, 218) !important
+
+}
+
+
+h3{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+    letter-spacing: 5px;
+    color: rgb(22, 211, 218);
+
+}
+      
+
+/* estilos section servicios */
+.servicios{
+   margin-top: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
+   display: grid;
+    grid-template-areas: 
+    "bodatxt bodaimg"
+    "bautizoimg bautizotxt"
+    "comuniontxt comunionimg"
+    ;
+    grid-template-rows:250px 250px 250px;
+
+
+}
+
+.bodatxt h2 p{
+    grid-area: bodatxt;
+}
+
+.bodaimg img{
+    grid-area: bodaimg;
+}
+
+.bautizoimg img{
+    grid-area: bautizoimg;
+}
+
+.bautizotxt h2 p{
+    grid-area: bautizotxt;
+}
+
+.comuniontxt h2 p{
+    grid-area: comuniontxt;
+}
+
+.comunionimg img{
+    grid-area: comunionimg;
+}
+
+
+.bodatxt{
+ padding: 10px;
+ margin-bottom: 30px;
+ box-shadow: 7px 7px 5px grey;
+ 
+}
+
+.bodaimg{
+    
+ margin-bottom: 30px;
+ box-shadow: 7px 7px 5px grey;
+}
+
+.bautizotxt{
+ padding: 10px;
+ margin-bottom: 30px;
+ box-shadow: 7px 7px 5px grey;
+}
+
+.bautizoimg{
+    
+ margin-bottom: 30px;
+ box-shadow: 7px 7px 5px grey;
+}
+
+.comuniontxt{
+    padding: 10px;
+    box-shadow: 7px 7px 5px grey;
+    margin-bottom: 40px;
+   }
+   
+.comunionimg{
+    box-shadow: 7px 7px 5px grey;
+    margin-bottom: 40px;
+   }
+
+
+/* estilos de header */
+
+
+
+
+header h1{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkturquoise;
+    
+}
+
+
+
+.icono-face .icono-whats{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+
+}
+
+
+/* estilos de main */
+
+
+
+
+.index-galeria{
+
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 200px;
+    flex-direction: row; 
+   
+   
+}
+
+img{
+
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.09);
+    
+}
+
+.contacto{
+background-color: rgb(15, 156, 145);
+display:grid;
+grid-template-columns: auto auto auto;
+gap: 10px;
+margin-bottom: 30px;
+margin-top: 20px;
+}
+
+.contacto-hijo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilos de footer*/
+
+.contenedor-footer{
+  
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo"
+    "menuf redes contacto"
+    "derechos derechos derechos"
+    ;
+   grid-template-columns: 33% 33% 33%;
+ 
+color: azure;
+
+}
+
+.logo-footer{
+    grid-area: logo;
+}
+
+.menu-footer{
+    grid-area: menuf;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-left: 20px;
+  
+}
+.menu-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: rgb(25, 180, 147)
+    
+}
+
+
+
+.redes-footer{
+    grid-area: redes;
+}
+
+.contacto-footer{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start; 
+    align-items:flex-start;
+    font-size:x-small;
+    padding-right: 25px;
+   
+}
+
+.derechos-footer{
+    grid-area: derechos;
+    text-align: center;
+   
+}
+
+footer h2{
+    font-size: medium;
+}
+
+
+
+
+/*estilos biografia.html*/
+
+.main-biografia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.texto-biografia{
+color: aliceblue;
+font-size: 15px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align:left;
+margin-left: 10px;
+
+}
+
+.texto-musicahtml{
+display: flex;
+justify-content:center;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+
+/*estilos video.html*/
+
+.main-video{
+
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+
+
+
+/*estilos contacto.html*/
+.main-divcontacto{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   padding: 30px;
+  
+  
+}
+
+
+@media screen and (min-width:400px){
+    /* estilos de header */
+
+   .titulo-pagina{
+         
+            display: none;
+          
+        }
+
+        .logo{
+            display: none;
+    }
+
+    .carrusel-xx {
+        
+        height: 100%; justify-content: center; align-items: center;
+    }
+
+
+    .servicios{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display:flex;
+        flex-direction: column;
+        
+        }
+
+        .contenedor-footer{
+  
+            padding: 10px;
+            gap: 20px;
+            display: grid;
+            grid-template-areas: 
+            "logo logo "
+            "menuf redes "
+            "contacto contacto"
+            "derechos derechos "
+            ;
+           grid-template-columns: 50% 50% ;
+           
+         
+        color: azure;
+        
+        }
+
+        .contacto{
+
+            font-size: 15px;
+        }
+
+        .contacto-hijo{
+            font-size:10px ;
+            
+        }
+
+        .contacto-hijo th{
+            font-size: 15px;
+        }
+        .contacto-hijo td{
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .contacto img{
+
+            width: 120px;
+           
+        }
+ 
+        
+        .contacto-hijo2{
+            display: none !important  
+        }
+
+        .main-biografia{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        
+        }
+
+}
+   
+@media screen and (min-width:1200px){
+        /* estilos de header */
+    
+       .titulo-pagina{
+             
+                font-size: 25px;
+                text-align: center;
+        
+            }
+
+        .logo{
+            margin-left: 20px;
+                width: 50px; height:50px
+            }
+
+            .carrusel-xx {
+                height: 100vh; justify-content: center; align-items: center;
+            }
+            
+            .servicios{
+                margin-top: 5%;
+                margin-left: 5%;
+                margin-right: 5%;
+                display: grid;
+                 grid-template-areas: 
+                 "bodatxt bodaimg"
+                 "bautizoimg bautizotxt"
+                 "comuniontxt comunionimg"
+                 ;
+                 grid-template-rows:250px 250px 250px;
+             
+             
+             }
+
+             .contenedor-footer{
+  
+                padding: 10px;
+                gap: 10px;
+                display: grid;
+                grid-template-areas: 
+                "logo logo logo"
+                "menuf redes contacto"
+                "derechos derechos derechos"
+                ;
+               grid-template-columns: 33% 33% 33%;
+             
+            color: azure;
+            
+            }
+
+
+            .contacto{
+
+                font-size: 20px;
+            }
+
+            .contacto-hijo2{
+                display: block !important  
+            }
+           
+            
+}
+
+   
+    
